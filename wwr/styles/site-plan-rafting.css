@@ -21,7 +21,7 @@ body{
     padding: 20px;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     color: var(--accent1-color);
 }
@@ -47,6 +47,10 @@ nav a{
     padding: 1rem;
     color: var(--nav-link-color);
     text-decoration: none;
+}
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
 }
 
 nav a:hover{
