@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #012E55;
+    --secondary-color: #2BC7FF;
+    --accent1-color: #DFA622;
+    --accent2-color: #3D291B;
+    
+    --heading-font: "Cinzel", serif;
+    --paragraph-font: "Ubuntu", sans-serif;
+    
+    --nav-background-color: #2BC7FF;
+    --nav-link-color: #3D291B;
+    --nav-hover-background-color: #3D291B;
+    --nav-hover-link-color: #2BC7FF;
+}
+
+body{
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+.hero{
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 3%;
+    left: 27%;
+    font-size: 3rem;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article{
+    background-color: rgba(112, 80, 57, 0.7);
+    position: absolute;
+    max-width: 70%;
+    height: auto;
+    top: 30%;
+    left: 15%;
+    padding: 1rem;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.hero article img{
+    float: right;
+    max-width: 200px;
+}
+
+footer img{
+    max-width: 50px;
+}
