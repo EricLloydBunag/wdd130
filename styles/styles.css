@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: darkslateblue;
     padding: 10px;
 }
 nav a{
+    text-decoration: none;
     color: aliceblue;
     display: block;
     padding: 20px;
@@ -20,7 +29,15 @@ body{
 }
 h1{
     color:darkslateblue;
+    border-bottom: solid 2px darkslateblue;
 }
+
+.grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20rem auto;
+}
+
 main img{
     width: 150px;
     height: auto;
@@ -33,23 +50,24 @@ main img{
 
 main{
     max-width: 840px;
-    margin: 0 auto;
-
+    margin: 10px;
+    order: 1;
 }
 aside{
     width:auto;
     text-align: center;
     position: relative;
+    order: 0;
 }
 aside img{
-    width: 400px;
+    width: 100%;
     height: auto;
     box-shadow: none;
 }
 
 aside h2{
     position:absolute;
-    right: 22%;
+    left: 5%;
 }
 
 footer{
