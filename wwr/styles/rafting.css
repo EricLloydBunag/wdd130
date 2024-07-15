@@ -165,6 +165,7 @@ input[type="text"], input[type="email"], textarea{
 .radio-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     margin-top: .5rem;
 }
