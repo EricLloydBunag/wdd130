@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Silco Whitewater Rafting</title>
+    <meta name="description" content="Contact Us page for WDD130 course project, Whitewater Rafting, containing contact information and a contact form for the site.">
+    <meta name="author" content="Eric Lloyd Bunag">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo" width="100">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="company-info">
+            <section id="map">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54668.413770132836!2d-107.34195655117945!3d39.55384813476914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721028983055!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>    
+            <section id="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: 123 River Road, Glenwood Springs, CO 81601</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@silcowhitewater.com</p>
+            </section>
+            <section id="employee-profiles">
+                <h2>Meet Our Team</h2>
+                    <figure><img src="images/employee1.jpg" alt="Employee 1"><figcaption>Scott Preston - Guide</figcaption></figure>
+                    <figure><img src="images/employee2.jpg" alt="Employee 2"><figcaption>John Buehner - Instructor</figcaption></figure>
+                    <figure><img src="images/employee3.jpg" alt="Employee 3"><figcaption>Jane Campbell</figcaption></figure>
+            </section>
+        </div>
+        <div id="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Your Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="purpose">Purpose of Message:</label>
+                    <select name="purpose" id="purpose">
+                        <option value="" selected disabled>Select ...</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Reservation Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="suggestion">suggestion</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                </div>
+                <div>
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©2024 Silco Whitewater Rafting | Eric Lloyd Bunag | <a href="https://ericlloydbunag.github.io/wdd130/wwr/images/contact-wireframe.jpg">Page Wireframe</a></p>
+        <div>
+            <img src="images/facebook-icon.webp" alt="Icon for Facebook.">
+            <img src="images/instagram-icon.webp" alt="Icon for Instagram.">
+            <img src="images/x-twitter-icon.webp" alt="Icon for X, formerly Twitter.">
+        </div>
+    </footer>
+</body>
+</html>
