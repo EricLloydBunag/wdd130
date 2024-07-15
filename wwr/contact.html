@@ -19,10 +19,11 @@
         </nav>
     </header>
     <main>
+        <h1>Contact Silco Whitewater Rafting</h1>
         <div class="company-info">
             <section id="map">
                 <h2>Our Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54668.413770132836!2d-107.34195655117945!3d39.55384813476914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721028983055!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54668.413770132836!2d-107.34195655117945!3d39.55384813476914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721028983055!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>    
             <section id="contact-info">
                 <h2>Contact Information</h2>
@@ -49,14 +50,17 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <label for="purpose">Purpose of Message:</label>
-                    <select name="purpose" id="purpose">
-                        <option value="" selected disabled>Select ...</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="reservation">Reservation Question</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="suggestion">suggestion</option>
-                    </select>
+                    <p>Purpose of Message:</p>
+                    <div class="radio-group">
+                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                        <label for="general-inquiry">General Inquiry</label>                    
+                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                        <label for="reservation-question">Reservation Question</label>
+                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                        <input type="radio" id="feedback" name="purpose" value="Feedback">
+                        <label for="feedback">Feedback</label>
+                    </div>
                 </div>
                 <div>
                     <label for="message">Message:</label>
