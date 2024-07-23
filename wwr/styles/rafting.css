@@ -82,7 +82,7 @@ footer img{
     position: absolute;
     max-width: 70%;
     height: auto;
-    top: 30%;
+    top: 40%;
     left: 17%;
     padding: 1rem;
     border-radius: 10px;
@@ -236,4 +236,64 @@ button a{
 
 .trip-table th {
     background-color: var(--primary-color);
+}
+
+/*Home*/
+#home-cta{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+    position: relative;
+    color: var(--accent2-color);
+}
+#home-cta img{
+    padding: 2rem;
+    max-width: 350px;
+    float: right;
+}
+#home-grid{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    background-color: white;
+    color: #3D291B;
+}
+.card-img{
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+#testimonials{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-content: center;
+}
+#testimonials img{
+    margin: 1rem;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.newsletter {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label {
+    margin: 0.5rem 0;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 80%;
+    max-width: 400px;
 }
